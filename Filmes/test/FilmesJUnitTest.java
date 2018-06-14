@@ -64,9 +64,23 @@ public class FilmesJUnitTest {
     }
     
     @Test
-    public void testeDefinirEObterValorFaturamento() {
+    public void testeDefinirEObterValorOrcamento() {
         Filmes avatar7 = new Filmes();
-        avatar7.setValorFaturamento(2787965087l);
-        assertEquals(2787965087l, avatar7.getValorFaturamento(),0);
+        avatar7.setValorOrcamento(273000000l);
+        assertEquals(273000000l, avatar7.getValorOrcamento(), 0);
+    }
+    
+    @Test
+    public void testeDefinirEObterValorFaturamento() {
+        Filmes avatar8 = new Filmes();
+        avatar8.setValorFaturamento(2787965087l);
+        assertEquals(2787965087l, avatar8.getValorFaturamento(), 0);
+    }
+    
+    @Test
+    public void testeDefinirEObterEspectadores() {
+        Filmes avatar9 = new Filmes();
+        avatar9.setEspecadores(10000000l);
+        assertEquals(10000000l, avatar9.getEspectadores(), 0);
     }
 }
